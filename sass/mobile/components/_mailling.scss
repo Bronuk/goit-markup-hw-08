@@ -1,0 +1,74 @@
+// .mailing {
+//   display: flex;
+//   position: relative;
+//   margin-left: 93px;
+// }
+
+// .mailing-form {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.mailing-form__label {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.mailing-form__input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 16px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.mailing-form__submit {
+  display: flex;
+  justify-content: center;
+}
+
+.mailing-form__btn {
+  // position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  border: none;
+  // right: 0;
+  // bottom: 0;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.mailing-form__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #ffffff;
+}
