@@ -21,7 +21,7 @@
 
 <body>
     <!-- Navigation -->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container">
             <nav class="header-navigation">
                 <a class="header__logo logo link" href="./index.html"><span class="logo__left__side">Web</span>Studio</a>
@@ -36,10 +36,10 @@
                         <a class="header-list__link link" href="">Контакты</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
     
             <!-- Contacts -->
-            <div class="header-contacts">
+            <!-- <div class="header-contacts">
                 <a class="header-contacts__mail link" href="mailto:info@devstudio.com"><svg class="mail__icon" width="16"
                         height="12">
                         <use href="./images/symbol-defs.svg#icon-envelope"></use>
@@ -49,28 +49,32 @@
                     </svg>+38 096 111 11 11</a>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <!-- Button filtres -->
     <main>
         <section class="filters">
             <div class="container">
                 <ul class="filters-list list">
-                    <li class="filters__item">
-                        <button class="filters__btn btn" type="button">Все</button>
-                    </li>
-                    <li class="filters__item">
-                        <button class="filters__btn btn" type="button">Веб-сайты</button>
-                    </li>
-                    <li class="filters__item">
-                        <button class="filters__btn btn" type="button">Приложения</button>
-                    </li>
-                    <li class="filters__item">
-                        <button class="filters__btn btn" type="button">Дизайн</button>
-                    </li>
-                    <li class="filters__item">
-                        <button class="filters__btn btn" type="button">Маркетинг</button>
-                    </li>
+                    <div class="top-buttons">
+                        <li class="filters__item">
+                            <button class="filters__btn btn" type="button">Все</button>
+                        </li>
+                        <li class="filters__item">
+                            <button class="filters__btn btn" type="button">Веб-сайты</button>
+                        </li>
+                        <li class="filters__item">
+                            <button class="filters__btn btn" type="button">Приложения</button>
+                        </li>
+                    </div>
+                    <div class="bottom-buttons">
+                        <li class="filters__item">
+                            <button class="filters__btn btn" type="button">Дизайн</button>
+                        </li>
+                        <li class="filters__item">
+                            <button class="filters__btn btn" type="button">Маркетинг</button>
+                        </li>
+                    </div>
                 </ul>
             
 
@@ -263,11 +267,12 @@
                     <label class="mailing-form__label" for="email">Подпишитесь на рассылку</label>
                     <input class="mailing-form__input" type="email" id="email" name="email" placeholder="E-mail">
                 </form>
-                <button class="mailing-form__btn" type="submit">Подписаться<svg class="mailing-form__icon" widht="24"
-                        height="24">
-                        <use href="./images/symbol-defs.svg#icon-telegram-form"></use>
-                    </svg>
-                </button>
+                <div class="mailing-form__submit">
+                    <button class="mailing-form__btn" type="submit">Подписаться<svg class="mailing-form__icon" widht="24" height="24">
+                            <use href="./images/symbol-defs.svg#icon-telegram-form"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>

@@ -30,12 +30,12 @@
         <div class="container">
             <nav class="header-navigation">
                 <a class="header__logo logo link" href="./index.html"><span class="logo__left__side">Web</span>Studio</a>
-            <button class="menu-button" type="button">
-                <svg width="24" height="16">
+                <button class="menu-button" type="button">
+                    <svg width="24" height="16">
                     <use class="nav-mobile" href="./images/symbol-defs.svg#icon-menu-mobile"></use>
                     <use class="close-mobile" href="./images/symbol-defs.svg#icon-close-mobile"></use>
-                </svg>
-            </button>
+                    </svg>
+                </button>
                 <!-- <ul class="header-list list">
                     <li class="header-list__item">
                         <a class="header-list__link current link" href="./index.html">Студия</a>
@@ -166,8 +166,11 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <!-- <img class="team-list__img" src="./images/igor-demyanenko.jpg" alt="igor-demyanenko" width="270"
-                            height="260"> -->
+                        <!-- <source
+                            srcset="./images/mobile/igor-demyanenko-mob.jpg 1x
+                            ./images/mobile/igor-demyanenko-mob.jpg 2x"
+                        > -->
+                        <img class="team-list__img" src="./images/mobile/igor-demyanenko-mob.jpg" alt="igor-demyanenko">
                         <h3 class="team-list__name">Игорь Демьяненко</h3>
                         <p class="team-list__profession" lang="en">Product Designer</p>
                         <ul class="team-social-list list">
@@ -194,7 +197,7 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <!-- <img class="team-list__img" src="./images/olga-repyna.jpg" alt="olga-repyna" width="270" height="260"> -->
+                        <img class="team-list__img" src="./images/mobile/olga-repyna-mob.jpg" alt="olga-repyna">
                         <h3 class="team-list__name">Ольга Репина</h3>
                         <p class="team-list__profession" lang="en">Frontend Developer</p>
                         <ul class="team-social-list list">
@@ -221,8 +224,7 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <!-- <img class="team-list__img" src="./images/nikolay-tarasov.jpg" alt="nikolay-tarasov" width="270"
-                            height="260"> -->
+                        <img class="team-list__img" src="./images/mobile/nikolay-tarasov-mob.jpg" alt="nikolay-tarasov">
                         <h3 class="team-list__name">Николай Тарасов</h3>
                         <p class="team-list__profession" lang="en">Marketing</p>
                         <ul class="team-social-list list">
@@ -249,8 +251,7 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <!-- <img class="team-list__img" src="./images/mehail-ermakov.jpg" alt="mehail-ermakov" width="270"
-                            height="260"> -->
+                        <img class="team-list__img" src="./images/mobile/mehail-ermakov-mob.jpg" alt="mehail-ermakov">
                         <h3 class="team-list__name">Михаил Ермаков</h3>
                         <p class="team-list__profession" lang="en">UI Designer</p>
                         <ul class="team-social-list list">
@@ -287,7 +288,7 @@
                 <ul class="clients-list list">
                     <li class="clients-list__item">
                         <a href="" class="clients-list__link link">
-                            <svg class="clients-icon" width="106" height="60">
+                            <svg class="clients-list__icon" width="106" height="60">
                                 <use href="./images/symbol-defs.svg#icon-logo"></use>
                             </svg></a>
                     </li>

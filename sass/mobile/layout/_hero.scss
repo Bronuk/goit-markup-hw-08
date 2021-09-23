@@ -1,18 +1,18 @@
 .hero {
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba(47, 48, 58, 0.4),
-  //     rgba(47, 48, 58, 0.4)
-  //   ),
-  //   url(../images/hero-img.jpg);
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mobile/hero-img-mob.jpg);
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  max-height: 600px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // max-width: 1600px;
+  // max-height: 600px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,8 +27,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent-color);
-  // color: var(--main-title-color);
+  color: var(--main-title-color);
   display: block;
   margin-right: auto;
   margin-left: auto;
