@@ -5,7 +5,6 @@
   height: 44px;
   margin-top: 16px;
   margin-right: auto;
-  margin-bottom: 30px;
   margin-left: auto;
 }
 
@@ -18,12 +17,12 @@
 }
 
 .team-social__link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   display: flex;
   text-align: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   fill: #afb1b8;
   transition-property: background-color;
   transition-duration: 250ms;

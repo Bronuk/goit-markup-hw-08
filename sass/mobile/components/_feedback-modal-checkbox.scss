@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  // font-size: 14px;
+  // line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
@@ -31,16 +33,19 @@
 }
 
 .feedback-license__link {
-  font-size: 14px;
-  line-height: 1.71;
+  display: inline-block;
+  // font-size: 14px;
+  // line-height: 1.71;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: #2196f3;
   border-bottom: 1px solid currentColor;
-  display: inline-block;
   line-height: 0.8;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
   &:hover {
     color: #757575;
     cursor: pointer;

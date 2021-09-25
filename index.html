@@ -25,20 +25,64 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    
     <header class="header">
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu is-hidden" data-menu>
+            <button class="menu-mobile-btn-close" data-menu-close>
+                <svg width="24" height="16">
+                    <use class="menu-close-btn__icon" href="./images/symbol-defs.svg#icon-close-mobile"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+                <li class="mobile-menu-list__item">
+                    <a class="mobile-menu-list__link link" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu-list__item">
+                    <a class="mobile-menu-list__link link " href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu-list__item">
+                    <a class="mobile-menu-list__link link" href="">Контакты</a>
+                </li>
+            </ul>
+                <div class="mobile-menu-section-tel">
+                    <a class="mobile-menu__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </div>
+                <div class="mobile-menu-section-mail">
+                    <a class="mobile-menu__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </div>
+                <div class="mobile-menu-social">
+                    <ul class="mobile-menu-social-list list">
+                        <li class="mobile-menu-social-list__item">
+                            <a class="mobile-menu-social__link link" href="">Instagram</a>
+                        </li>
+                        <li class="mobile-menu-social-list__item">
+                            <a class="mobile-menu-social__link link" href="">Twitter</a>
+                        </li>
+                        <li class="mobile-menu-social-list__item">
+                            <a class="mobile-menu-social__link link" href="">Facebook</a>
+                        </li>
+                        <li class="mobile-menu-social-list__item ">
+                            <a class="mobile-menu-social__link link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <!-- Navigation -->
         <div class="container">
             <nav class="header-navigation">
                 <a class="header__logo logo link" href="./index.html"><span class="logo__left__side">Web</span>Studio</a>
-                <button class="menu-button" type="button">
+
+                <!-- Mobile menu btn open -->
+                <button class="menu-mobile-btn-open" data-menu-open>
                     <svg width="24" height="16">
-                    <use class="nav-mobile" href="./images/symbol-defs.svg#icon-menu-mobile"></use>
-                    <use class="close-mobile" href="./images/symbol-defs.svg#icon-close-mobile"></use>
+                        <use class="menu-open-btn__icon" href="./images/symbol-defs.svg#icon-menu-mobile"></use>
                     </svg>
                 </button>
                 <!-- <ul class="header-list list">
                     <li class="header-list__item">
-                        <a class="header-list__link current link" href="./index.html">Студия</a>
+                        <a class="header-list__link link current" href="./index.html">Студия</a>
                     </li>
                     <li class="header-list__item">
                         <a class="header-list__link link" href="./portfolio.html">Портфолио</a>
@@ -395,16 +439,16 @@
     </footer>
 
     <!-- Hidden -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="btn-close-modal" type="button" data-modal-close><svg class="icon-close-modal" width="11"
                     height="11">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
-            </button> -->
+            </button>
 
             <!-- Feedback -->
-            <!-- <form class="feedback">
+            <form class="feedback">
                 <p class="feedback-text">Оставьте свои данные, мы вам перезвоним</p>
                 <label class="feedback-contacts__label" for="name">Имя</label>
                 <div class="feedback-contacts">
@@ -440,15 +484,15 @@
                     <label class="feedback-comment__label" for="comment">Комментарий</label>
                     <textarea class="feedback-comment__field" name="comment" id="comment" placeholder="Введите текст"
                         cols="30" rows="10"></textarea>
-                </div> -->
+                </div>
 
                 <!-- Checkbox License -->
-                <!-- <div class="feedback-license">
+                <div class="feedback-license">
                     <label class="feedback-license__label" for="checkbox">
                         <input class="feedback-license__input" type="checkbox" id="checkbox">
                         <span class="feedback-license__icon">
                         </span>
-                        Соглашаюсь с рассылкой и принимаю &nbsp;
+                        Соглашаюсь с рассылкой и принимаю
                         <a class="feedback-license__link link" href="">Условия договора</a>
                     </label>
                 </div>
@@ -456,7 +500,8 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
