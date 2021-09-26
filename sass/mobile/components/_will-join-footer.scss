@@ -1,6 +1,5 @@
 .will-join {
   margin-bottom: 60px;
-  // margin-left: 70px;
 }
 
 .will-join__text {
@@ -13,14 +12,14 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  // margin-bottom: 10px;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+  }
 }
 
 .will-join-social-list {
   display: flex;
   justify-content: center;
-  // width: 206px;
-  // height: 80px;
 }
 
 .will-join-social__item:not(:last-child) {
