@@ -488,10 +488,6 @@ ul {
   }
 }
 
-.advantages-icon-list {
-  margin-bottom: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .advantages-icon-list {
     display: flex;
@@ -515,6 +511,12 @@ ul {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-icon-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -563,6 +565,7 @@ ul {
 }
 
 .advantages-text-list__description {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -698,7 +701,8 @@ ul {
 }
 
 .team-list__img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -833,7 +837,8 @@ ul {
 }
 
 .team-list__img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -871,8 +876,8 @@ ul {
 
 .clients-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.5;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -880,6 +885,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .clients-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
     margin-bottom: 50px;
   }
 }
@@ -942,11 +949,10 @@ ul {
   .clients-list__link {
     min-width: 170px;
   }
-}
-
-.clients-list__link:hover, .clients-list__link:focus {
-  fill: var(--accent-color);
-  border-color: #2196f3;
+  .clients-list__link:hover, .clients-list__link:focus {
+    fill: var(--accent-color);
+    border-color: #2196f3;
+  }
 }
 
 .clients-list__icon {
@@ -988,6 +994,7 @@ ul {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer-contact {
+    margin-bottom: unset;
     margin-right: 70px;
   }
 }
@@ -1446,7 +1453,7 @@ ul {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .filters {
     padding-top: 94px;
     padding-bottom: 94px;
